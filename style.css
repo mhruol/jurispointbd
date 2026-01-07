@@ -42,3 +42,38 @@ footer {
   text-align: center;
   padding: 12px;
 }
+#why-choose-us {
+  padding: 40px 20px;
+  background-color: #f2f5fa;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+#why-choose-us h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+#why-choose-us h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#why-choose-us p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#why-choose-us ul {
+  list-style: disc inside;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#why-choose-us li {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
