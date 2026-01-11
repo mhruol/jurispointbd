@@ -4,6 +4,100 @@
   <meta charset="UTF-8">
   <title>About | JurisPoint</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #1a1a1a;
+    }
+
+    header {
+      background: #0b2c4d;
+      color: white;
+      text-align: center;
+      padding: 28px;
+    }
+
+    nav {
+      background: #133b66;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .content {
+      background: white;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 35px;
+      border-radius: 5px;
+    }
+
+    .content h2 {
+      color: #0b2c4d;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* Team Section */
+    #team {
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    #team h2 {
+      text-align: center;
+      color: #0b2c4d;
+      margin-bottom: 20px;
+    }
+
+    .team-intro {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+
+    .lawyer-card {
+      background-color: #f9f9f9;
+      border-left: 5px solid #0b2c4d;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+      border-radius: 5px;
+    }
+
+    .lawyer-name {
+      color: #0b2c4d;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .lawyer-card p {
+      margin: 5px 0;
+    }
+
+    footer {
+      background: #0b2c4d;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
@@ -40,12 +134,14 @@
   </p>
 </section>
 
-<section id="team" class="content">
+<section id="team">
   <h2>Our Team</h2>
-  <p>Our team of dedicated professionals deliver comprehensive legal solutions across multiple areas of law.</p>
+  <p class="team-intro">
+    Our team of dedicated professionals deliver comprehensive legal solutions across multiple areas of law.
+  </p>
 
-  <div class="lawyer-profile">
-    <h3 style="color: #0b2c4d; font-weight: bold; text-transform: uppercase;">Md Saiful Bari</h3>
+  <div class="lawyer-card">
+    <h3 class="lawyer-name">MD SAIFUL BARI</h3>
     <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
     <p><strong>Title:</strong> Advocate, Supreme Court of Bangladesh</p>
     <p><strong>Expertise:</strong> Criminal Law, Employment & Labour Law, Writ Matters, Tax Law, Litigation</p>
@@ -53,15 +149,14 @@
     <p><strong>Phone:</strong> +8801739858886</p>
   </div>
 
-  <div class="lawyer-profile">
-    <h3 style="color: #0b2c4d; font-weight: bold; text-transform: uppercase;">Md Habebur Rahman</h3>
+  <div class="lawyer-card">
+    <h3 class="lawyer-name">MD HABEBUR RAHMAN</h3>
     <p><strong>Qualifications:</strong> LLM (International Arbitration), LLM (International Law)</p>
     <p><strong>Title:</strong> Advocate</p>
     <p><strong>Expertise:</strong> Arbitration, Corporate Law, Family Law, Aviation & Admiralty Law, Regulatory Compliance</p>
     <p><strong>Email:</strong> consultant@jurispointbd.com</p>
     <p><strong>Phone:</strong> +8801913220025</p>
   </div>
-
 </section>
 
 <footer>
