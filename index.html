@@ -4,27 +4,73 @@
   <meta charset="UTF-8">
   <title>JurisPoint | Law Firm in Bangladesh</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic container for alignment */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    /* Multi-column for practice areas */
+    .practice-areas {
+      columns: 2; /* Can be 3 for larger screens */
+      column-gap: 40px;
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .practice-areas li {
+      margin-bottom: 10px;
+    }
+
+    /* Step-by-step process styling */
+    .process ol {
+      padding-left: 20px;
+    }
+
+    /* Testimonials styling */
+    .testimonials p {
+      margin: 10px 0;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px 0;
+      border-top: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
 
-<header>
+<header class="container">
   <h1>JurisPoint</h1>
   <p>Professional Law Firm with Experienced Lawyers</p>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
+<nav class="container">
+  <a href="index.html">Home</a> |
+  <a href="about.html">About</a> |
+  <a href="services.html">Services</a> |
   <a href="contact.html">Contact</a>
 </nav>
 
-<section class="hero">
+<section class="hero container">
   <h2>Trusted Legal Solutions</h2>
   <p>Comprehensive legal services, representation, and advice you can rely on.</p>
 </section>
 
-<section class="content">
+<section class="content container">
   <h3>Why Choose JurisPoint?</h3>
   <ul>
     <li>Qualified and experienced lawyers handling complex legal matters</li>
@@ -36,7 +82,7 @@
   </ul>
 </section>
 
-<section class="process">
+<section class="process container">
   <h3>Our Step-by-Step Approach</h3>
   <ol>
     <li><strong>Initial Consultation:</strong> Understand your legal needs and objectives.</li>
@@ -48,21 +94,32 @@
   </ol>
 </section>
 
-<section class="highlights">
+<section class="highlights container">
   <h3>Our Practice Areas</h3>
-  <ul>
+  <ul class="practice-areas">
     <li>Corporate & Commercial Law</li>
+    <li>Company & Business Law</li>
+    <li>Banking & Finance Law</li>
+    <li>Investment & Foreign Direct Investment Law</li>
     <li>Employment & Labour Law</li>
-    <li>Family, Divorce & Custody Law</li>
-    <li>Immigration, Aviation & Admiralty Law</li>
-    <li>Dispute Resolution & Arbitration</li>
-    <li>Regulatory & Compliance Law</li>
+    <li>Family & Divorce Law</li>
+    <li>Criminal Law</li>
+    <li>Civil Litigation Law</li>
+    <li>Property & Land Law</li>
+    <li>Real Estate & Conveyancing Law</li>
     <li>Intellectual Property Law</li>
-    <li>Investment & Banking Law</li>
+    <li>Immigration & Nationality Law</li>
+    <li>Arbitration & Alternative Dispute Resolution Law</li>
+    <li>Admiralty & Maritime Law</li>
+    <li>Aviation Law</li>
+    <li>Taxation Law</li>
+    <li>Anti-Corruption & Compliance Law</li>
+    <li>Regulatory & Administrative Law</li>
+    <li>Legal Drafting & Documentation Law</li>
   </ul>
 </section>
 
-<section class="testimonials">
+<section class="testimonials container">
   <h3>Trusted by Our Clients</h3>
   <p>"JurisPoint provided expert legal representation and guidance that helped our business navigate complex regulations." – <em>Corporate Client</em></p>
   <p>"The team handled my family matter with professionalism, compassion, and expertise." – <em>Individual Client</em></p>
