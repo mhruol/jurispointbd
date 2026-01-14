@@ -154,3 +154,17 @@ footer {
     font-size: 24px;
   }
 }
+
+/* ============================= */
+/* Legal Services List Styling */
+.legal-services {
+  list-style: disc inside;
+  margin: 0 auto;       /* centers the list */
+  padding: 0;
+  max-width: 800px;     /* optional: keeps lines from being too long */
+  line-height: 1.8;     /* better readability */
+}
+
+.legal-services li {
+  margin-bottom: 30px;  /* more space between each service */
+}
