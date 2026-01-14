@@ -8,30 +8,35 @@ body {
 /* ===== HEADER ===== */
 header {
   background: #0b2c4d;
-  height: 90px;
+  height: 90px;                /* fixed height for all pages */
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
+/* container to limit width */
 .header-container {
   width: 100%;
   max-width: 1200px;
   display: flex;
   align-items: center;
+  justify-content: space-between;  /* logo left, nav right */
   padding: 0 20px;
 }
 
-/* Brand (logo + text) */
+/* logo + text */
 .brand {
   display: flex;
   align-items: center;
 }
 
+/* logo size */
 .brand img {
   height: 55px;
   width: auto;
 }
 
+/* brand text */
 .brand-name {
   color: white;
   font-size: 24px;
@@ -41,16 +46,13 @@ header {
 
 /* ===== NAVIGATION ===== */
 nav {
-  background: #133b66;
-  height: 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 nav a {
   color: white;
-  margin: 0 18px;
+  margin-left: 20px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -59,7 +61,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ===== CONTENT ===== */
+/* ===== HERO / CONTENT SECTIONS ===== */
 .hero {
   background: white;
   padding: 45px;
@@ -81,7 +83,7 @@ footer {
   padding: 12px;
 }
 
-/* ===== MOBILE IMPROVEMENTS ===== */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
 
   header {
@@ -97,13 +99,11 @@ footer {
   }
 
   nav {
-    height: auto;
     flex-wrap: wrap;
-    padding: 10px 0;
   }
 
   nav a {
-    margin: 8px 12px;
+    margin-left: 12px;
     font-size: 14px;
   }
 
