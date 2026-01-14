@@ -5,38 +5,39 @@ body {
   background: #f4f6f8;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* ===== HEADER ===== */
 header {
   background: #0b2c4d;
-  height: 90px;                /* fixed height for all pages */
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* container to limit width */
 .header-container {
   width: 100%;
   max-width: 1200px;
   display: flex;
+  justify-content: space-between; /* logo left, nav right */
   align-items: center;
-  justify-content: space-between;  /* logo left, nav right */
-  padding: 0 20px;
 }
 
-/* logo + text */
 .brand {
   display: flex;
   align-items: center;
 }
 
-/* logo size */
 .brand img {
   height: 55px;
   width: auto;
 }
 
-/* brand text */
 .brand-name {
   color: white;
   font-size: 24px;
@@ -44,7 +45,7 @@ header {
   margin-left: 12px;
 }
 
-/* ===== NAVIGATION ===== */
+/* NAVIGATION */
 nav {
   display: flex;
   align-items: center;
@@ -61,54 +62,69 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ===== HERO / CONTENT SECTIONS ===== */
+/* HERO */
 .hero {
   background: white;
-  padding: 45px;
+  padding: 45px 20px;
   text-align: center;
+  margin-top: 20px;
 }
 
-.content {
+/* CONTENT SECTIONS */
+.content, .process, .highlights, .testimonials {
   background: white;
-  margin: 20px;
-  padding: 35px;
+  margin: 20px 0;
+  padding: 35px 20px;
   border-radius: 6px;
 }
 
-/* ===== FOOTER ===== */
+/* Practice Areas columns */
+.practice-areas {
+  columns: 2;
+  column-gap: 40px;
+  list-style-type: disc;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.practice-areas li {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
 footer {
   background: #0b2c4d;
   color: white;
   text-align: center;
   padding: 12px;
+  margin-top: 20px;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
+/* HEADINGS CENTERED */
+h1, h2, h3 {
+  text-align: center;
+  color: #1a1a1a;
+}
 
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
   header {
     height: 70px;
   }
-
   .brand img {
     height: 42px;
   }
-
   .brand-name {
     font-size: 18px;
   }
-
-  nav {
-    flex-wrap: wrap;
-  }
-
   nav a {
     margin-left: 12px;
     font-size: 14px;
   }
-
-  .hero,
-  .content {
-    padding: 25px;
+  .hero, .content, .process, .highlights, .testimonials {
+    padding: 25px 15px;
+  }
+  .practice-areas {
+    columns: 1;
   }
 }
