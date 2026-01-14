@@ -172,7 +172,7 @@ footer {
 /* ============================= */
 /* Center the four main section headings */
 #why-choose-us h2,
-.practice-areas + h2,
+.center-heading,
 .process h2,
 .testimonials h2 {
   text-align: center;
