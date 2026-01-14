@@ -107,7 +107,8 @@ h3 {
 }
 
 .practice-areas li {
-  margin-bottom: 12px;
+  margin-bottom: 20px; /* increased from 12px */
+  line-height: 1.6;    /* adds extra breathing room */
 }
 
 /* Process */
