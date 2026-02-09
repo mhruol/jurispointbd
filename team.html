@@ -28,7 +28,10 @@
       padding: 20px 25px;
       margin-bottom: 25px;
       border-radius: 5px;
-      text-align: center;
+
+      display: flex;
+      align-items: center;
+      gap: 25px;
     }
 
     .lawyer-card h3 {
@@ -44,21 +47,36 @@
       font-size: 16px;
     }
 
-    /* Lawyer photo styling — OPTION 2 (RECTANGLE) */
+    /* Lawyer photo styling — RECTANGLE */
     .lawyer-photo {
       width: 150px;
       height: 190px;
       object-fit: cover;
       border-radius: 8px;
       border: 3px solid #0b2c4d;
-      margin-bottom: 15px;
+      flex-shrink: 0;
     }
 
-    /* Responsive photos for mobile */
+    /* Text container */
+    .lawyer-info {
+      text-align: left;
+    }
+
+    /* Responsive layout for mobile */
     @media (max-width: 600px) {
+      .lawyer-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .lawyer-info {
+        text-align: center;
+      }
+
       .lawyer-photo {
         width: 120px;
         height: 160px;
+        margin-bottom: 10px;
       }
     }
   </style>
@@ -92,34 +110,42 @@
 
   <div class="lawyer-card">
     <img src="images/saiful-bari.jpg" alt="Advocate Md Saiful Bari" class="lawyer-photo">
-    <h3>MD SAIFUL BARI</h3>
-    <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
-    <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
-    <p><strong>Expertise:</strong> Criminal Law, Labour Law, Litigation, Tax Law, Writ Matters</p>
+    <div class="lawyer-info">
+      <h3>MD SAIFUL BARI</h3>
+      <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
+      <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
+      <p><strong>Expertise:</strong> Criminal Law, Labour Law, Litigation, Tax Law, Writ Matters</p>
+    </div>
   </div>
   
   <div class="lawyer-card">
     <img src="images/mohtasim-billah.jpg" alt="Advocate Mohtasim Billah" class="lawyer-photo">
-    <h3>MOHTASIM BILLAH</h3>
-    <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
-    <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
-    <p><strong>Expertise:</strong> Banking Law, Civil Law, Land Law, Litigation, Writ Matters</p>
+    <div class="lawyer-info">
+      <h3>MOHTASIM BILLAH</h3>
+      <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
+      <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
+      <p><strong>Expertise:</strong> Banking Law, Civil Law, Land Law, Litigation, Writ Matters</p>
+    </div>
   </div>
   
   <div class="lawyer-card">
     <img src="images/ifatara-kabir.jpg" alt="Advocate Ifatara Kabir" class="lawyer-photo">
-    <h3>IFATARA KABIR</h3>
-    <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
-    <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
-    <p><strong>Expertise:</strong> Civil Law, Constitutional Law, Family Law, Human Rights, Litigation</p>
+    <div class="lawyer-info">
+      <h3>IFATARA KABIR</h3>
+      <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
+      <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
+      <p><strong>Expertise:</strong> Civil Law, Constitutional Law, Family Law, Human Rights, Litigation</p>
+    </div>
   </div>
   
   <div class="lawyer-card">
     <img src="images/habebur-rahman.jpg" alt="Advocate Md Habebur Rahman" class="lawyer-photo">
-    <h3>MD HABEBUR RAHMAN</h3>
-    <p><strong>Qualifications:</strong> LLM (International Arbitration), LLM (International Law)</p>
-    <p><strong>Designation:</strong> Advocate, District & Sessions Judge Court, Dhaka</p>
-    <p><strong>Expertise:</strong> Arbitration, Corporate Law, Family Law, Public Law, Regulatory Compliance</p>
+    <div class="lawyer-info">
+      <h3>MD HABEBUR RAHMAN</h3>
+      <p><strong>Qualifications:</strong> LLM (International Arbitration), LLM (International Law)</p>
+      <p><strong>Designation:</strong> Advocate, District & Sessions Judge Court, Dhaka</p>
+      <p><strong>Expertise:</strong> Arbitration, Corporate Law, Family Law, Public Law, Regulatory Compliance</p>
+    </div>
   </div>
 
   <p style="text-align:center; margin-top:40px;">
