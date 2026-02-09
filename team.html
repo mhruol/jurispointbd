@@ -7,30 +7,32 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="jurispoint-logo.jpg" type="image/jpg">
   <style>
-    /* Only new styling for spacing and team section */
+    /* Section styling */
     section.container {
-      margin: 40px auto; /* separate sections with space */
+      margin: 40px auto;
       padding: 25px 20px;
       background-color: #fff;
       border-radius: 8px;
     }
 
     section.container h2 {
-      text-align: center; /* center all section titles */
+      text-align: center;
       color: #0b2c4d;
       margin-bottom: 25px;
     }
 
+    /* Lawyer card styling */
     .lawyer-card {
       background-color: #f9f9f9;
       border-left: 5px solid #0b2c4d;
       padding: 20px 25px;
       margin-bottom: 25px;
       border-radius: 5px;
+      text-align: center; /* centers photo + text */
     }
 
     .lawyer-card h3 {
-      color: #0b2c4d; /* make name eye-catching */
+      color: #0b2c4d;
       font-weight: bold;
       text-transform: uppercase;
       font-size: 22px;
@@ -40,6 +42,24 @@
     .lawyer-card p {
       margin: 5px 0;
       font-size: 16px;
+    }
+
+    /* Lawyer photo styling */
+    .lawyer-photo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #0b2c4d;
+      margin-bottom: 15px;
+    }
+
+    /* Responsive photos for mobile */
+    @media (max-width: 600px) {
+      .lawyer-photo {
+        width: 100px;
+        height: 100px;
+      }
     }
   </style>
 </head>
@@ -58,13 +78,12 @@
   <div class="container">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-     <a href="team.html">Our Team</a>
+    <a href="team.html">Our Team</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
   </div>
 </nav>
 
-  
 <section class="container">
   <h2>Meet Our Expert Team</h2>
   <p style="text-align:center; margin-bottom:40px;">
@@ -72,6 +91,7 @@
   </p>
 
   <div class="lawyer-card">
+    <img src="images/saiful-bari.jpg" alt="Advocate Md Saiful Bari" class="lawyer-photo">
     <h3>MD SAIFUL BARI</h3>
     <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
     <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
@@ -79,13 +99,15 @@
   </div>
   
   <div class="lawyer-card">
+    <img src="images/mohtasim-billah.jpg" alt="Advocate Mohtasim Billah" class="lawyer-photo">
     <h3>MOHTASIM BILLAH</h3>
     <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
     <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
     <p><strong>Expertise:</strong> Banking Law, Civil Law, Land Law, Litigation, Writ Matters</p>
   </div>
   
-    <div class="lawyer-card">
+  <div class="lawyer-card">
+    <img src="images/ifatara-kabir.jpg" alt="Advocate Ifatara Kabir" class="lawyer-photo">
     <h3>IFATARA KABIR</h3>
     <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
     <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
@@ -93,6 +115,7 @@
   </div>
   
   <div class="lawyer-card">
+    <img src="images/habebur-rahman.jpg" alt="Advocate Md Habebur Rahman" class="lawyer-photo">
     <h3>MD HABEBUR RAHMAN</h3>
     <p><strong>Qualifications:</strong> LLM (International Arbitration), LLM (International Law)</p>
     <p><strong>Designation:</strong> Advocate, District & Sessions Judge Court, Dhaka</p>
@@ -106,8 +129,6 @@
     </a>
   </p>
 </section>
-
-  
 
 <footer>
   <p>JurisPoint is a professional law firm and legal consultancy in Bangladesh, serving clients across Dhaka and nationwide.</p>
