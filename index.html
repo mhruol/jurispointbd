@@ -49,51 +49,27 @@
       margin-bottom: 25px;
     }
 
-    /* Lawyer card styling */
-    .lawyer-card {
-      background-color: #f9f9f9;
-      border-left: 5px solid #0b2c4d;
-      padding: 20px 25px;
-      margin-bottom: 25px;
-      border-radius: 5px;
-      display: flex; /* photo left, text right */
-      align-items: center;
-      gap: 20px;
-    }
-
-    .lawyer-card h3 {
-      color: #0b2c4d;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 22px;
-      margin-bottom: 12px;
-    }
-
-    .lawyer-card p {
-      margin: 5px 0;
+    /* Practice area list styling */
+    .practice-areas {
+      list-style-type: disc;
+      padding-left: 30px;
       font-size: 16px;
+      line-height: 1.7;
     }
 
-    /* Lawyer photo styling */
-    .lawyer-photo {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 8px; /* square/rectangle style */
-      border: 3px solid #0b2c4d;
+    /* Contact CTA styling */
+    .contact-cta {
+      text-align: center;
+      margin-top: 40px;
     }
 
-    /* Responsive for mobile */
-    @media (max-width: 768px) {
-      .lawyer-card {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .lawyer-photo {
-        width: 120px;
-        height: 120px;
-      }
+    .contact-cta a {
+      text-decoration: none;
+      background: #1877F2;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -138,65 +114,38 @@
   <p>At JurisPoint, we combine deep legal expertise with a client-centered approach. Every matter receives strategic attention, clear guidance, and proactive legal support from consultation to resolution. Our goal is to ensure that clients are fully informed and confident throughout the legal process.</p>
 </section>
 
-<!-- Services Preview -->
+<!-- Practice Areas Section -->
 <section class="container">
-  <h2>Our Legal Services</h2>
-  <p>We provide expert legal services in corporate law, civil and criminal litigation, family law, banking, taxation, arbitration, and regulatory compliance. Our solutions are tailored to meet the specific needs of individuals, businesses, and corporate clients across Dhaka and nationwide.</p>
+  <h2>Our Practice Areas</h2>
+  <ul class="practice-areas">
+    <li>Corporate & Commercial Law</li>
+    <li>Company & Business Law</li>
+    <li>Banking & Finance Law</li>
+    <li>Investment & Foreign Direct Investment (FDI)</li>
+    <li>Employment & Labour Law</li>
+    <li>Family & Divorce Law</li>
+    <li>Criminal Law</li>
+    <li>Civil Litigation</li>
+    <li>Property & Land Law</li>
+    <li>Real Estate & Conveyancing</li>
+    <li>Intellectual Property Law</li>
+    <li>Immigration & Nationality Law</li>
+    <li>Arbitration & ADR</li>
+    <li>Admiralty & Maritime Law</li>
+    <li>Aviation Law</li>
+    <li>Taxation Law</li>
+    <li>Anti-Corruption & Compliance</li>
+    <li>Regulatory & Administrative Law</li>
+    <li>Legal Drafting & Documentation</li>
+  </ul>
   <p style="text-align:center; margin-top:20px;">
     <a href="services.html" style="font-weight:bold; color:#1877F2;">View All Legal Services →</a>
   </p>
 </section>
 
-<!-- Our Expert Team -->
-<section class="container">
-  <h2>Meet Our Expert Team</h2>
-  <p style="text-align:center; margin-bottom:40px;">Our dedicated lawyers deliver expert legal guidance with professionalism, integrity, and results you can trust.</p>
-
-  <div class="lawyer-card">
-    <img src="images/saiful-bari.jpg" alt="Advocate Md Saiful Bari – Criminal Law, Labour Law Expert" class="lawyer-photo">
-    <div>
-      <h3>MD SAIFUL BARI</h3>
-      <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
-      <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
-      <p><strong>Expertise:</strong> Criminal Law, Labour Law, Litigation, Tax Law, Writ Matters</p>
-    </div>
-  </div>
-  
-  <div class="lawyer-card">
-    <img src="images/mohtasim-billah.jpg" alt="Advocate Mohtasim Billah – Banking and Civil Law Expert" class="lawyer-photo">
-    <div>
-      <h3>MOHTASIM BILLAH</h3>
-      <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
-      <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
-      <p><strong>Expertise:</strong> Banking Law, Civil Law, Land Law, Litigation, Writ Matters</p>
-    </div>
-  </div>
-  
-  <div class="lawyer-card">
-    <img src="images/ifatara-kabir.jpg" alt="Advocate Ifatara Kabir – Civil and Constitutional Law Expert" class="lawyer-photo">
-    <div>
-      <h3>IFATARA KABIR</h3>
-      <p><strong>Qualifications:</strong> LLB (Hons), LLM</p>
-      <p><strong>Designation:</strong> Advocate, Supreme Court of Bangladesh</p>
-      <p><strong>Expertise:</strong> Civil Law, Constitutional Law, Family Law, Human Rights, Litigation</p>
-    </div>
-  </div>
-  
-  <div class="lawyer-card">
-    <img src="images/habebur-rahman.jpg" alt="Advocate Md Habebur Rahman – Corporate and Arbitration Law Expert" class="lawyer-photo">
-    <div>
-      <h3>MD HABEBUR RAHMAN</h3>
-      <p><strong>Qualifications:</strong> LLM (International Arbitration), LLM (International Law)</p>
-      <p><strong>Designation:</strong> Advocate, District & Sessions Judge Court, Dhaka</p>
-      <p><strong>Expertise:</strong> Arbitration, Corporate Law, Family Law, Public Law, Regulatory Compliance</p>
-    </div>
-  </div>
-
-  <p style="text-align:center; margin-top:40px;">
-    <a href="contact.html" style="text-decoration:none; background:#1877F2; color:white; padding:12px 25px; border-radius:5px; font-weight:bold;">
-      Contact Our Expert Team
-    </a>
-  </p>
+<!-- Contact CTA -->
+<section class="container contact-cta">
+  <a href="contact.html">Contact Our Expert Team</a>
 </section>
 
 <!-- Footer -->
