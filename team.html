@@ -6,80 +6,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="jurispoint-logo.jpg" type="image/jpg">
+  
   <style>
-    /* Section styling */
-    section.container {
-      margin: 40px auto;
-      padding: 25px 20px;
-      background-color: #fff;
-      border-radius: 8px;
-    }
+  /* Section styling */
+  section.container {
+    margin: 40px auto;
+    padding: 25px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
 
-    section.container h2 {
-      text-align: center;
-      color: #0b2c4d;
-      margin-bottom: 25px;
-    }
+  section.container h2 {
+    text-align: center;
+    color: #0b2c4d;
+    margin-bottom: 25px;
+  }
 
-    /* Lawyer card styling */
+  /* Lawyer card styling */
+  .lawyer-card {
+    background-color: #f9f9f9;
+    border-left: 5px solid #0b2c4d;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 25px;
+    align-items: start;
+  }
+
+  .lawyer-card h3 {
+    color: #0b2c4d;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .lawyer-card p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  /* Lawyer photo styling */
+  .lawyer-photo {
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #0b2c4d;
+  }
+
+  /* Text container */
+  .lawyer-info {
+    text-align: left;
+  }
+
+  /* Responsive layout for mobile */
+  @media (max-width: 600px) {
     .lawyer-card {
-      background-color: #f9f9f9;
-      border-left: 5px solid #0b2c4d;
-      padding: 20px 25px;
-      margin-bottom: 25px;
-      border-radius: 5px;
-
-      display: flex;
-      align-items: center;
-      gap: 25px;
+      grid-template-columns: 1fr;
+      text-align: center;
     }
 
-    .lawyer-card h3 {
-      color: #0b2c4d;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 22px;
-      margin-bottom: 12px;
-    }
-
-    .lawyer-card p {
-      margin: 5px 0;
-      font-size: 16px;
-    }
-
-    /* Lawyer photo styling — RECTANGLE */
-    .lawyer-photo {
-      width: 150px;
-      height: 190px;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 3px solid #0b2c4d;
-      flex-shrink: 0;
-    }
-
-    /* Text container */
     .lawyer-info {
-      text-align: left;
+      text-align: center;
     }
 
-    /* Responsive layout for mobile */
-    @media (max-width: 600px) {
-      .lawyer-card {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .lawyer-info {
-        text-align: center;
-      }
-
-      .lawyer-photo {
-        width: 120px;
-        height: 160px;
-        margin-bottom: 10px;
-      }
+    .lawyer-photo {
+      width: 120px;
+      height: 160px;
+      margin: 0 auto 15px;
     }
-  </style>
+  } </style>
+
 </head>
 <body>
 
