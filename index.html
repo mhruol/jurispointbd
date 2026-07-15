@@ -63,13 +63,79 @@
       margin-top: 40px;
     }
 
-    .contact-cta a {
+    .contact-cta a, .hero-btn {
       text-decoration: none;
       background: #1877F2;
       color: white;
-      padding: 12px 25px;
+      padding: 14px 30px;
       border-radius: 5px;
       font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .hero-btn {
+      margin-top: 20px;
+      background: #0b2c4d;
+    }
+
+    .contact-cta a:hover, .hero-btn:hover {
+      background: #1155cc;
+    }
+
+    /* Team Banner Home Preview */
+    .team-banner-box {
+      background: #fafafa;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 30px 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .team-banner-box p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    /* Home Intake Form styling */
+    .home-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-submit-btn {
+      background: #1877F2;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
     }
   </style>
 </head>
@@ -93,9 +159,10 @@
 </nav>
 
 <!-- Hero Section -->
-<section class="hero container">
+<section class="hero container" style="text-align: center;">
   <h2>Your Trusted Legal Partner</h2>
   <p>JurisPoint provides comprehensive, transparent, and ethical legal services to individuals, businesses, and corporate clients across Bangladesh. Our team specializes in corporate law, civil and criminal litigation, family law, banking, taxation, arbitration, and regulatory compliance. JurisPoint is a law firm with advocates enrolled in the Bangladesh Bar Council.</p>
+  <a href="#consultation-form" class="hero-btn">Schedule a Consultation</a>
 </section>
 
 <!-- About Section -->
@@ -111,6 +178,19 @@
 
   <h2>Our Approach</h2>
   <p>At JurisPoint, we combine deep legal expertise with a client-centered approach. Every matter receives strategic attention, clear guidance, and proactive legal support from consultation to resolution. Our goal is to ensure that clients are fully informed and confident throughout the legal process.</p>
+</section>
+
+<!-- Unified Legal Team Section -->
+<section class="container">
+  <h2>Our Legal Team</h2>
+  <div class="team-banner-box">
+    <p>
+      At JurisPoint, we operate as a cohesive panel of legal professionals. Every member of our team is an advocate enrolled in the Bangladesh Bar Council, bringing rigorous training, shared ethical values, and structured problem-solving to every case. We combine our collective strengths to deliver result-oriented advice across corporate, civil, and specialized legal sectors.
+    </p>
+    <a href="team.html" style="font-weight:bold; color:#1877F2; text-decoration: none; display: inline-block;">
+      Meet Our Advocates & View Professional Qualifications →
+    </a>
+  </div>
 </section>
 
 <!-- Practice Areas Section -->
@@ -170,14 +250,48 @@
 <!-- Testimonials Section -->
 <section class="container testimonials">
   <h2>Trusted by Clients</h2>
-  <p>“JurisPoint provided expert legal guidance that helped our company navigate complex regulatory requirements in Bangladesh.” – <em>Corporate Client</em></p>
- 
-  <p>“The lawyers handled my family matter with professionalism, and transparency. Highly recommended.” – <em>Individual Client</em></p>
+  <p style="font-size: 18px; color: #fbbc05; text-align: center; margin-bottom: 15px;">★★★★★</p>
+  <p style="text-align: center;">“JurisPoint provided expert legal guidance that helped our company navigate complex regulatory requirements in Bangladesh.” – <em>Corporate Client, Dhaka</em></p>
+  
+  <p style="font-size: 18px; color: #fbbc05; text-align: center; margin-top: 25px; margin-bottom: 15px;">★★★★★</p>
+  <p style="text-align: center;">“The lawyers handled my family matter with professionalism, and transparency. Highly recommended.” – <em>Individual Client</em></p>
 </section>
 
-<!-- Contact CTA -->
+<!-- Direct Case Evaluation Intake Form Section -->
+<section class="container" id="consultation-form">
+  <h2>Request a Legal Consultation</h2>
+  <p style="text-align: center; margin-bottom: 25px;">Fill out the form below. Our legal team will review your matter and contact you shortly.</p>
+  
+  <form class="home-form" action="#" method="POST">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your Name">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required placeholder="e.g., +88017XXXXXXXX">
+    </div>
+    <div class="form-group">
+      <label for="service">Required Legal Service</label>
+      <select id="service" name="service">
+        <option value="corporate">Corporate & Company Law</option>
+        <option value="property">Property & Land Disputes</option>
+        <option value="family">Family & Divorce Law</option>
+        <option value="litigation">Civil / Criminal Litigation</option>
+        <option value="other">Other Legal Consultations</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="message">Brief Overview of Case</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Provide a brief description of your legal requirements..."></textarea>
+    </div>
+    <button type="submit" class="form-submit-btn">Submit Case Evaluation Request</button>
+  </form>
+</section>
+
+<!-- Contact CTA Button -->
 <section class="container contact-cta">
-  <a href="contact.html">Contact Our Expert Team</a>
+  <a href="contact.html">View Our Full Contact & Office Location Details</a>
 </section>
 
 <!-- Footer -->
